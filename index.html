@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLE DE COLORAÇÃO</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="imagem">
+        <img src="./img/logo.png" alt="Imagem não carregada" class="imagem" id="imagem">
+    </div>
+    <div class="row">
+        <div class="panel">
+            <h4>Blur</h4>
+            <div class="obs">
+                <div>0px</div>
+                <div>50px</div>
+                <div>100px</div>
+            </div>
+            <input type="range" name="blur" id="blur" value="0" min="0" max="100" onchange="getBlur();">
+        </div>
+        <div class="panel">
+            <h4>Brightness</h4>
+            <div class="obs">
+                <div>0%</div>
+                <div>100%</div>
+                <div>200%</div>
+            </div>
+            <input type="range" name="brightness" id="brightness" value="100" min="0" max="200" onchange="getBrightness();">
+        </div>
+        <div class="panel">
+            <h4>Contrast</h4>
+            <div class="obs">
+                <div>0%</div>
+                <div>100%</div>
+                <div>200%</div>
+            </div>
+            <input type="range" name="contrast" id="contrast" value="100" min="0" max="200" onchange="getContrast();">
+        </div>
+        <div class="panel">
+            <h4>Grayscale</h4>
+            <div class="obs">
+                <div>0%</div>
+                <div>50%</div>
+                <div>100%</div>
+            </div>
+            <input type="range" name="grayscale" id="grayscale" value="0" min="0" max="100" onchange="getGrayscale();">
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel">
+            <h4>Hue-Rotate</h4>
+            <div class="obs">
+                <div>0deg</div>
+                <div>180deg</div>
+                <div>360deg</div>
+            </div>
+            <input type="range" name="hue-rotate" id="hueRotate" value="0" min="0" max="360" onchange="getHueRotate();">
+        </div>
+        <div class="panel">
+            <h4>Opacity</h4>
+            <div class="obs">
+                <div>0%</div>
+                <div>50%</div>
+                <div>100%</div>
+            </div>
+            <input type="range" name="opacity" id="opacity" value="100" min="0" max="100" onchange="getOpacity();">
+        </div>
+        <div class="panel">
+            <h4>Saturate</h4>
+            <div class="obs">
+                <div>0%</div>
+                <div>100%</div>
+                <div>200%</div>
+            </div>
+            <input type="range" name="saturate" id="saturate" value="100" min="0" max="200" onchange="getSaturate();">
+        </div>
+        <div class="panel">
+            <h4>Sepia</h4>
+            <div class="obs">
+                <div>0%</div>
+                <div>50%</div>
+                <div>100%</div>
+            </div>
+            <input type="range" name="sepia" id="sepia"  value="0" min="0" max="100" onchange="getSepia();">
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
